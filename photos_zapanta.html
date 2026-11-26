@@ -1,0 +1,92 @@
+<html>
+<head>
+<style>
+    body{
+	
+	background-image:url("https://i.pinimg.com/1200x/2b/32/71/2b3271241fe3abf9d727e09e000a353e.jpg");
+	background-size:cover;
+    }
+    h1   {
+	
+    font-family:Comic Sans MS;
+    color:rgb(0, 225, 255);
+    text-shadow: 5px 5px #2e2a2a;
+    text-align:center;
+    }
+.main {
+margin: 50px auto;
+display: grid;
+grid-template-columns:repeat(3,200px);
+gap: 20px;
+}
+
+img { 
+        width: 500px; 
+        height: 300px; 
+        border: 5px solid white; 
+        border-radius: 15px; 
+ 
+        /* Smooth effect */ 
+        transition: 0.5s; 
+ 
+        /* Default filter */ 
+        filter: none; 
+        
+    } 
+
+.main:hover > :not(:hover){
+filter:blur(5px);
+opacity:0.5;
+filter: sepia(0%);
+}
+button {
+background-color: rgb(0, 255, 221);
+color: white;
+padding: 15px 30px;
+border: none;
+border-radius: 8px;
+transition: all 0.5s ease;
+}
+button:hover {
+background-color: rgb(0, 255, 221);
+transform: scale(1.1);
+}
+</style>
+<body>
+
+    <center>
+        
+    
+<script> 
+document.writeln("<center>");
+ 
+document.writeln("<h1>Photo Collection</h1>"); 
+ 
+document.writeln("<img id='gallery' src='https://i.pinimg.com/736x/19/d5/59/19d559f7ac32c3e2465664a90dc6f935.jpg'>"); 
+ 
+document.writeln("<br><br>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('gallery').src='https://i.pinimg.com/1200x/9d/f4/81/9df4810d9725a127e07844d17453973b.jpg'\">IMAGE 1</button>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('gallery').src='https://i.pinimg.com/736x/1c/44/2b/1c442bf2088bfcf84c6c03c34393a534.jpg'\">IMAGE 2</button>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('gallery').src='https://i.pinimg.com/736x/83/bb/6f/83bb6fe50496ca2443e676b8677ba1f7.jpg'\">IMAGE 3</button>"); 
+
+document.writeln("<button onclick=\"document.getElementById('gallery').src='https://i.pinimg.com/736x/e6/a3/00/e6a300708c4957003b24611535001f55.jpg'\">IMAGE 4</button>");
+document.writeln("<button onclick=\"document.getElementById('gallery').src='https://i.pinimg.com/1200x/54/e3/bc/54e3bc366261ec8f2aee52f32664cdd6.jpg'\">IMAGE 5</button>"); 
+
+ 
+document.writeln("<br><br>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('gallery').style.filter='blur(5px)'\">BLUR</button>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('gallery').style.filter='grayscale(100%)'\">GRAYSCALE</button>"); 
+document.writeln("<button onclick=\"document.getElementById('gallery').style.filter='brightness(150%)'\">BRIGHTNESS</button>"); 
+document.writeln("<button onclick=\"document.getElementById('gallery').style.filter='sepia(100%)'\">SEPIA</button>"); 
+document.writeln("<button onclick=\"document.getElementById('gallery').style.filter='none'\">NORMAL</button>"); 
+</script> 
+<button> hover </button>
+</center>
+</head>
+</body>
+</html>
