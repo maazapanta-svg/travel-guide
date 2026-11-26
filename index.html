@@ -1,0 +1,160 @@
+<html>
+    <title> Navigation Menu</title>
+<style>
+	body{
+	background-image:url("https://i.pinimg.com/1200x/25/2a/9f/252a9f956dcbe70d72a2e2196f4f8957.jpg");
+	background-size:cover;
+	
+
+	
+    }
+	 
+     h1   {
+	
+    font-family:Comic Sans MS;
+    color:rgb(0, 225, 255);
+    text-shadow: 5px 5px #2e2a2a;
+    text-align:center;
+   	
+          }
+
+          h2    {
+	
+    font-family:Comic Sans MS;
+    color:rgb(0, 247, 255);
+    text-shadow:3px 3px #2e2b2b;
+    text-align:center;	
+    
+        
+        
+          }
+          p   {
+	
+    font-family:papyrus;
+    font-weight:bold;
+    color:rgb(0, 255, 234);
+    text-align:left;
+        
+        
+        
+        
+          }	       
+           /* MAIN MENU */ 
+        .menu { 
+            font-family:Comic Sans MS;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            gap: 15px; 
+            flex-wrap: wrap; 
+            background-color: #dce8ff; 
+            padding: 20px; 
+            border-radius: 12px; 
+        } 
+ 
+        /* MENU ITEMS */ 
+        .menu-item { 
+            position: relative; 
+        } 
+ 
+        .menu a { 
+            font-family:Comic Sans MS;
+            display: block; 
+            background-color: #244a91; 
+            color: white; 
+            padding: 12px 20px; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            transition: 0.3s ease; 
+        } 
+ 
+        /* HOVER EFFECT */ 
+        .menu a:hover { 
+            font-family:Comic Sans MS;
+            background-color: #e5a72c; 
+            color: #222; 
+            transform: translateY(-5px); 
+            box-shadow: 0 0 10px #66148b, 
+                        0 0 25px #0ff; 
+        } 
+ 
+        /* SUBMENU */ 
+        .submenu { 
+            font-family:Comic Sans MS;
+            display: none; 
+            position: absolute; 
+            top: 100%; 
+            left: 0; 
+            min-width: 160px; 
+            background-color: #dce8ff; 
+            padding: 8px; 
+            border-radius: 8px; 
+            z-index: 10; 
+        } 
+ 
+        /* SHOW SUBMENU WHEN HOVERED */ 
+        .menu-item:hover .submenu { 
+            display: block; 
+        } 
+ 
+        /* SUBMENU LINKS */ 
+        .submenu a { 
+            font-family:Comic Sans MS;
+            background-color: #4169a1; 
+            margin: 5px 0; 
+            border-radius: 5px; 
+        } 
+ 
+        .submenu a:hover { 
+            font-family:Comic Sans MS;
+            background-color: #e5a72c; 
+            transform: translateX(5px); 
+        } 
+ 
+    </style> 
+</head> 
+ 
+<body>
+    <center> 
+  <img src="Cubao Narrow.png" height="300" width="1900">
+    <h1>Menu</h1>
+    <h1>By Maya Andrea Zapanta, aka CEO of the Filipinos</h1>
+     <audio controls autoplay>
+            <source src="River Flows In You (Remix) [Bass Boosted].mp3"type="audio/mpeg">
+            </audio> 
+ 
+    <nav class="menu"> 
+ 
+        <!-- HOME --> 
+        <div class="menu-item"> 
+            <a href="home2_zapanta.html">Home</a> 
+            
+        </div> 
+ 
+        <!-- ABOUT --> 
+        <div class="menu-item"> 
+            <a href="#">About</a> 
+            <div class="submenu"> 
+                <a href="featured.zapanta.html">About the philippines</a> 
+                <a href="culture_zapanta.html">Our culture</a> 
+            </div> 
+        </div> 
+ 
+        <!-- GALLERY --> 
+        <div class="menu-item"> 
+            <a href="#">Gallery</a> 
+            <div class="submenu"> 
+                <a href="maps_zapanta.html">Tourist Destinations</a> 
+                <a href="photos_zapanta.html">Photo collection</a>  
+            </div> 
+        </div> 
+ 
+        <!-- CONTACT --> 
+        <div class="menu-item"> 
+            <a href="contact_zapanta.html">Contact</a> 
+        </div> 
+ 
+    </nav>
+    </center>
+    </html>
+</body>
